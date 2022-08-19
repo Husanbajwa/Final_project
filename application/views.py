@@ -1,6 +1,8 @@
-from http.client import HTTPResponse
 from django.shortcuts import render
-from django.http import HttpRequest
+from django.http import HttpResponse
 
-def sayhello(request):
-    return HTTPResponse('Hello World')
+def say_hello(request):
+    return render(request, 'hello.html')
+
+def about(request):
+    return HttpResponse("this is about page")
