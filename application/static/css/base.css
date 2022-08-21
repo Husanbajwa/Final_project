@@ -1,0 +1,91 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* ===========================Panel 3================== */
+.menu-bar1, .submenu{
+    background-color: black;
+    text-align: center
+}
+.menu-bar1 ul li a{
+    color: aliceblue;
+}
+
+.menu-bar1 ul{
+    display: inline-flex;
+}
+
+.menu-bar1 ul li{
+    margin:10px;
+    padding: 5px;
+}
+
+
+.menu-bar1 ul li:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.menu-bar1 ul li:hover a{
+    color: black;
+}
+.menu-bar1 ul li:hover .submenu a{
+    color: aliceblue;
+}
+.menu-bar1 ul li .submenu li:hover a{
+    color: black;
+}
+.submenu{
+    display: none;
+}
+.menu-bar1 ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+}
+.menu-bar1 ul li:hover .submenu ul{
+    display: block;
+    margin: 5px;
+
+}
+.menu-bar1 ul li:hover .submenu ul li{
+    width: 250px;
+    padding-left: 10px;
+    /* adding lines between sub menu */
+    border-bottom: 0.1px solid #fff;
+}
+/* remove line after last chilf */
+.menu-bar1 ul li:hover .submenu ul li:last-child{
+    border-bottom: none;
+}
+
+/* Sub Menu  positions */
+.menu-button:hover div.submenu-1{
+    margin-left:-1%;
+}
+.menu-button:hover div.submenu-2{
+    margin-left: -1%;
+}
+.menu-button:hover div.submenu-3{
+    margin-left: -1%;
+}
+.menu-button:hover div.submenu-4{
+    margin-left: -3%;
+}
+.menu-button:hover div.submenu-5{
+    margin-left: -3%;
+}
+.menu-button:hover div.submenu-6{
+    margin-left: -8%;
+}
+.menu-button:hover div.submenu-7{
+    margin-left: -8%;
+}
+.menu-button:hover div.submenu-8{
+    margin-left: -10%;
+}
